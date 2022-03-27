@@ -83,7 +83,7 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-PM_START_TEXT = """ Hello *{}*, My name is *{}*! [O](https://te.legra.ph/file/24e28c0580a5201fc1413.mp4)
+PM_START_TEXT = """ Hello *{}*, My name is *{}*! [O](https://telegra.ph/file/b39d9ee3064c0867ff9fb.mp4)
  I am an Anime Themed advance group management bot with a lots of Features.
 So what are you waiting for?
 *Add me in your groups and give me full rights to make me function well.*
@@ -232,8 +232,8 @@ def yone_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                    [
-                     InlineKeyboardButton(text="Support", url="t.me/Yone_Support"),
-                     InlineKeyboardButton(text="News", url="t.me/Yone_Updates"),
+                     InlineKeyboardButton(text="Support", url="t.me/Monkey_D_Luffy_Support"),
+                     InlineKeyboardButton(text="Owner", url="t.me/Dhairya_g"),
                    ],
                    [
                     InlineKeyboardButton(text="Back", callback_data="yone_back")
@@ -276,7 +276,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            stringz = "My dear Owner , I'm Working Again. Thanks to make me live."
+            stringz = "My dear Owner , Luffy Is Working . Thanks for making me alive."
             dispatcher.bot.sendMessage(f"@{OWNER_ID}", stringz)
         except Unauthorized:
             LOGGER.warning(
